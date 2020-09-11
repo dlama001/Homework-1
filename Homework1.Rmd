@@ -108,3 +108,4 @@ After adjusting the topcoding for the ages of both women and men, we see a large
 library(readxl)
 read_excel("GSPC.xlsx")
 ```
+

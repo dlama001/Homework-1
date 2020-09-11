@@ -39,8 +39,9 @@ Outcomes Not Replaced - 20 Potential Outcomes, 10 events
 dice.roll <- sample(1:20, size=10, replace=FALSE)
 dice.roll
 ```
-```{r}
-# try to add Excel table of results
+```{r, echo=FALSE}
+library(readxl)
+read_excel("HwkADieResults.xlsx")
 ```
 For each of the different simulated die rolls probability of a 6 occurring on one roll in each experiment is 0.1667, 0.1 and 0.0001 respectively. The event of a 6 occurred more frequently in each experiment than those probabilities would suggest. Of 200 rolls of a fair die, 6 appeared 36 times (0.18). The same number of rolls of a 10 sided die produced a 6 on 23 occasions (0.115). Using code to create a roll of a 20 sided die with the numbers not be replaced produced a 6 on 5 of the 100 rolls (0.05).  
 
@@ -103,3 +104,7 @@ After adjusting the topcoding for the ages of both women and men, we see a large
 ```
 
 #### Question 5 - S&P 500
+```{r, echo=FALSE}
+library(readxl)
+read_excel("GSPC.xlsx")
+```

@@ -1,3 +1,5 @@
+Authors: Dorothy Gay, Monica Martinez-Raga, Patrick Sinclair
+
 Question 3 - Dice Roll
 ----------------------
 
@@ -14,11 +16,11 @@ we can execute the function **roll**.
 
     dice
 
-    ##  [1] 2 4 6 2 6 1 1 2 6 3 2 3 4 6 6 2 2 3 5 1
+    ##  [1] 6 2 3 2 5 5 5 2 6 6 1 3 3 4 6 3 3 1 2 2
 
     roll()
 
-    ##  [1] 3 6 1 2 3 6 1 3 6 2 3 1 1 2 4 1 4 5 2 5
+    ##  [1] 3 4 3 5 4 5 4 6 4 4 5 5 6 6 5 6 5 6 3 2
 
 Using classical probability, we would expect to see a 6 from the roll of
 a fair die 1/6 times. For 20 trials, we would expect 6 to be the result
@@ -46,11 +48,11 @@ it is executed.
 
     dicew
 
-    ##  [1] 6 5 6 4 5 6 1 6 5 6 6 1 2 6 3 6 6 4 4 6
+    ##  [1] 5 4 3 2 5 1 4 3 3 5 6 6 2 4 6 4 6 2 6 6
 
     rollw()
 
-    ##  [1] 5 3 3 6 6 6 6 1 6 1 1 1 1 6 2 5 4 4 6 2
+    ##  [1] 6 6 6 6 4 6 5 6 5 3 6 6 1 1 5 2 6 3 2 4
 
 In *dicew*, the probability of rolling a 6 has been adjusted to 1/2,
 well above the probability of 1/6 for a fair die. We would expect to see

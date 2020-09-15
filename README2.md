@@ -17,6 +17,14 @@ dice <- sample(die, size = 20, replace = TRUE)
 roll <- function(){
   dice <- sample(die, size = 20, replace = TRUE)
   dice
+  }
+rollw <- function(die = 1:6){
+  dice <- sample(die, size = 20, replace = TRUE, 
+  prob = c(1/10, 1/10, 1/10, 1/10, 1/10, 1/2))
+  dice
+  }
+dicew <- sample(die, size = 20, replace = TRUE, 
+  prob = c(1/10, 1/10, 1/10, 1/10, 1/10, 1/2)) 
 ```
 ## Question 3 - Dice Roll
 ### Part 1 - A Fair Die
@@ -34,7 +42,9 @@ that generates a random sample of numbers from the interval. We allowed the samp
 The command **dice** will produce the same set of randomly generated numbers each time it is executed. If we wish to view different outcomes, we can execute the function **roll**.
 ```r
 dice
+#  [1] 4 3 2 5 1 6 2 3 5 1 3 3 4 2 1 2 4 1 6 1
 roll()
+# [1] 2 2 5 3 1 2 2 5 4 3 4 5 1 3 2 5 1 1 6 4
 ```
 Using classical probability, we would expect to see a 6 from the roll of a fair die 1/6 times. For 20 trials, we would expect 6 to be the result 20*(1/6) = 3.33 times. 
 
@@ -55,6 +65,13 @@ To adjust our die, we created a new function for sampling the object "die" and a
 ```
 
 As with our fair die, the object *dicew* will return the same set of weighted outcomes. *rollw* will produce a new set of outcomes each time it is executed.  
+
+```{r}
+dicew
+#  [1] 1 6 2 6 5 2 6 6 6 6 6 5 2 6 5 6 6 6 6 6
+rollw()
+#  [1] 5 5 6 5 3 3 3 6 6 3 6 6 6 5 6 6 6 5 1 6
+```
 
 In *dicew*, the probability of rolling a 6 has been adjusted to 1/2, well above the probability of 1/6 for a fair die. We would expect to see a 6 rolled 10 times in 20 trials. The results from *dicew* showed 6 appearing 9 times out of 20, just below what we expected but more than twice as often as we saw in out **dice** trial.
 

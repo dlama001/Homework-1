@@ -2,11 +2,6 @@
 title: "HW1"
 author: "Dorothy Gay, Monica Martinez-Raga, Patrick Sinclair"
 date: "9/11/2020"
-output: 
-  prettydoc::html_pretty:
-    theme: hpstr
-    highlight: github
-    toc: true
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
